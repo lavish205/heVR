@@ -15,8 +15,14 @@
       <a-camera></a-camera>
     </a-entity>
     <a-sky color="#ececec"></a-sky>
-    <a-image src="#he-logo" position="-0.17 0 -2" scale="0.4 0.4 0.4"></a-image>
-    <a-text value="HackerEarth" color="#323754" position="0 0 -2" scale="1.5 1.5 1.5"></a-text>
+
+    <a-entity  id="logo_div">
+      <a-image src="#he-logo" position="-0.17 0 -2" scale="0.4 0.4 0.4"></a-image>
+      <a-text value="HackerEarth" color="#323754" position="0 0 -2" scale="1.5 1.5 1.5"></a-text>
+       <a-text value="HackerEarth" color="#323754" position="0 0 -2" scale="1.5 1.5 1.5" rotation="" visible="" text=""></a-text>
+        <a-box id="start_quiz" color="tomato" depth="0.5" height="0.46" width="2.5" position="0.8 -0.6 -2"></a-box>
+        <a-text value='Start Quiz' color="#fff" position="0 -0.6 -1.6" scale="1.5 1.5 1.5" rotation="" visible="" text=""></a-text>
+    </a-entity>
 
 
 
@@ -26,6 +32,9 @@
       <a-plane src="#ground" height="100" width="100" rotation="-90 0 0"></a-plane>
       <a-plane rotation="-90 0 0" color="red"></a-plane>
       
+
+      <!-- question div -->
+
 
     <a-entity>
         <a-entity camera look-controls wasd-controls>
@@ -37,8 +46,82 @@
     </a-entity>
     <a-torus-knot color="#B84A39" arc="180" p="2" q="7" radius="5" radius-tubular="0.1"></a-torus-knot>
 
+
+<!--  question 1 -->
+  <a-entity id="question" position="0 0 -10">
+      <a-text value="Q: All mangoes are golden in colour. No golden-coloured things are cheap. Conclusions: I. All mangoes are cheap. II. Golden-coloured mangoes are not cheap." color="#323754" position="-2 1.5 0" scale="1.2 1.2 1.2" rotation="" visible="" text=""></a-text>
+
+
+      <a-entity id="option_1" iscorrect="false" position="1 0.5 -1.5">
+        <a-box id="" color="tomato" depth="0.3" height="0.46" width="7.5" position="0 0 0"></a-box>
+        <a-text value='Only conclusion I follows' color="#fff" position="-1 -0.1 1" scale="1 1 1" rotation="" visible="" text=""></a-text>
+      </a-entity>
+
+      <a-entity id="option_2" iscorrect="true" position="1 -0.5 -1.2">
+        <a-box id="" color="tomato" depth="0.3" height="0.46" width="7.5" position="0 0 0"></a-box>
+        <a-text value='Only conclusion II follows' color="#fff" position="-0.8 0 1" scale="1 1 1" rotation="" visible="" text=""></a-text>
+      </a-entity>
+
+      <a-entity id="option_3" iscorrect="false" position="0 -1 0">
+        <a-box id="" color="tomato" depth="0.5" height="0.46" width="8.5" position="0.8 -0.6 -2"></a-box>
+        <a-text value='Either I or II follows' color="#fff" position="0 -0.5 -1.6" scale="1 1 1" rotation="" visible="" text=""></a-text>
+      </a-entity>
+
+      <a-entity id="option_4" iscorrect="false" position="0 -2 0">
+        <a-box id="" color="tomato" depth="0.5" height="0.46" width="8.5" position="0.8 -0.6 -2"></a-box>
+        <a-text value='Neither I nor II follows' color="#fff" position="0 -0.5 -1.6" scale="1 1 1" rotation="" visible="" text=""></a-text>
+      </a-entity>
+
+      <a-entity id="option_5" iscorrect="false" position="0 -3.3 0">
+        <a-box id="" color="tomato" depth="0.5" height="0.46" width="8.5" position="0.8 -0.6 -2"></a-box>
+        <a-text value='Both I and II follow' color="#fff" position="0 -0.5 -1.6" scale="1.5 1.5 1.5" rotation="" visible="" text=""></a-text>
+      </a-entity>
+</a-entity>
+<!-- question 2 -->
+
+  <a-entity id="question" position="-10 0 -10">
+      <a-text value="Q: What’s the difference between include and require?" color="#323754" position="-2 1.5 0" scale="1.2 1.2 1.2" rotation="" visible="" text=""></a-text>
+
+
+      <a-entity id="option_1" iscorrect="false" position="1 0.5 -1.5">
+        <a-box id="" color="tomato" depth="0.3" height="1.46" width="7.5" position="0 0 0"></a-box>
+        <a-text value='If the file is not found by require(), it will cause a fatal error and halt the execution of the script' color="#fff" position="-2 -0.1 1" scale="1 1 1" rotation="" visible="" text=""></a-text>
+      </a-entity>
+
+      <a-entity id="option_2" iscorrect="true" position="1 -1.5 -1.2">
+        <a-box id="" color="tomato" depth="0.3" height="1.46" width="7.5" position="0 0 0"></a-box>
+        <a-text value='If the file is not found by include(), a warning will be issued, but execution will continue.' color="#fff" position="-2 0 1" scale="1 1 1" rotation="" visible="" text=""></a-text>
+      </a-entity>
+</a-entity>
+
+      <!-- question 3 -->
+
+
+  <a-entity id="question" position="10 0 -10">
+      <a-text value="Q: The Kingston Mall has more stores than the Galleria. The Four Corners Mall has fewer stores than the Galleria. The Kingston Mall has more stores than the Four Corners Mall. If the first two statements are true, the third statement is" color="#323754" position="-2 1.5 0" scale="1.2 1.2 1.2" rotation="" visible="" text=""></a-text>
+
+
+      <a-entity id="option_1" iscorrect="false" position="1 0.5 -1.5">
+        <a-box id="" color="tomato" depth="0.3" height="0.46" width="3.5" position="0 0 0"></a-box>
+        <a-text value='true' color="#fff" position="-1 -0.1 1" scale="1 1 1" rotation="" visible="" text=""></a-text>
+      </a-entity>
+
+      <a-entity id="option_2" iscorrect="true" position="1 -0.5 -1.2">
+        <a-box id="" color="tomato" depth="0.3" height="0.46" width="3.5" position="0 0 0"></a-box>
+        <a-text value='false' color="#fff" position="-0.8 0 1" scale="1 1 1" rotation="" visible="" text=""></a-text>
+      </a-entity>
+
+      <a-entity id="option_3" iscorrect="false" position="0 -1 0">
+        <a-box id="" color="tomato" depth="0.5" height="0.46" width="3.5" position="0.8 -0.6 -2"></a-box>
+        <a-text value='uncertain' color="#fff" position="0 -0.5 -1.6" scale="1 1 1" rotation="" visible="" text=""></a-text>
+      </a-entity>
+</a-entity>
+
+  <script type="text/javascript">
+  document.querySelector('#start_quiz').addEventListener('click', function() {
+          console.log('lllll')
+      // remove the div
+    });
+  </script>
   <body>
 </html>
-<script type="text/javascript">
-
-</script>
