@@ -27,23 +27,23 @@
 	<a-scene>
 
     <a-assets>
-        <!-- <img id="ground" src="ground.jpg"> -->
+        <img id="ground" src="ground.jpg">
         <img src="he-logo.png" id="he-logo", crossorigin="anonymous">
     </a-assets>
 
-    <a-entity position="">
+    <a-entity position="0 0 -0.2">
       <a-camera></a-camera>
     </a-entity>
 
     <a-entity>
         <a-entity camera look-controls wasd-controls>
-            <a-entity position="0 2 -2" scale="0.2 0.2 0.2" geometry="primitive: ring; radiusOuter: 0.20; radiusInner: 0.13;" material="color: #ADD8E6; shader: flat" cursor="maxDistance: 30; fuse: true">
+            <a-entity position="0.5 2 -2.8" scale="0.2 0.2 0.2" geometry="primitive: ring; radiusOuter: 0.20; radiusInner: 0.13;" material="color: #ef2d5e; shader: flat" cursor="maxDistance: 30; fuse: true">
                 <a-animation begin="click" easing="ease-in" attribute="scale" fill="backwards" from="0.1 0.1 0.1" to="1 1 1" dur="150"></a-animation>
                 <a-animation begin="fusing" easing="ease-in" attribute="scale" fill="forwards" from="1 1 1" to="0.2 0.2 0.2" dur="1500"></a-animation>
             </a-entity>
         </a-entity>
     </a-entity>
-
+    <a-plane rotation="-90 0 0" width="25" height="40" color="#7BC8A4" position="1.84 -0.92 -8"></a-plane>
 
     <a-entity  id="home-entity" material="opacity: 1" visible="true">
     	<a-entity>
@@ -98,23 +98,23 @@
       <a-text value="Q: After being dropped a certain ball always bounces back to 2/5 of the height of its previous bounce. After the first bounce it reaches a height of 125 inches. How high (in inches) will it reach after its fourth bounce?" color="#323754" scale="1.7 1.7 1.7"></a-text>
     </a-entity>
       <a-entity id="option_1" iscorrect="true" question_index="2" class="option">
-        <a-box id="" color="#323754" depth="0.3" height="0.46" width="5.5" position="0 0.2 -3" class="option" question_index="2"></a-box>
-        <a-text value='20' color="#fff" scale="1 1 1" rotation="" visible="" text="" position="-1.2 0.2 -2.5" class="option" question_index="2"></a-text>
+        <a-box id="" color="#323754" depth="0.3" height="0.46" width="5.5" position="0 0.2 -2.5" class="option" question_index="2"></a-box>
+        <a-text value='20' color="#fff" scale="1 1 1" rotation="" visible="" text="" position="-1.2 0.2 -1.7" class="option" question_index="2"></a-text>
       </a-entity>
 
       <a-entity id="option_2" iscorrect="false" question_index="2" class="option">
-        <a-box id="" color="#323754" depth="0.5" height="0.46" width="5.5"  position="0 -0.6 -3" class="option"></a-box>
-        <a-text value='15' color="#fff" scale="1 1 1"  position="-1.2 -0.5 -1.9" class="option"></a-text>
+        <a-box id="" color="#323754" depth="0.5" height="0.46" width="5.5"  position="0 -0.6 -2.5" class="option"></a-box>
+        <a-text value='15' color="#fff" scale="1 1 1"  position="-1.2 -0.5 -1.7" class="option"></a-text>
       </a-entity>
 
       <a-entity id="option_3" iscorrect="false" question_index="2" class="option">
-        <a-box id="" color="#323754" depth="0.5" height="0.46" width="5.5" position="0 -1.6 -3" class="option"></a-box>
-        <a-text value='8' color="#fff" scale="1 1 1" position="-1.2 -1.3 -1.9" class="option"></a-text>
+        <a-box id="" color="#323754" depth="0.5" height="0.46" width="5.5" position="0 -1.6 -2.5" class="option"></a-box>
+        <a-text value='8' color="#fff" scale="1 1 1" position="-1.2 -1.3 -1.7" class="option"></a-text>
       </a-entity>
 
       <a-entity id="option_4" iscorrect="false" question_index="2" class="option">
-        <a-box id="" color="#323754" depth="0.3" height="0.46" width="5.5" position="0 -2.8 -3" class="option"></a-box>
-        <a-text value='5' color="#fff" scale="1 1 1" position="-1.2 -2.3 -1.9" class="option"></a-text>
+        <a-box id="" color="#323754" depth="0.3" height="0.46" width="5.5" position="0 -2.8 -2.5" class="option"></a-box>
+        <a-text value='5' color="#fff" scale="1 1 1" position="-1.2 -2.3 -1.7" class="option"></a-text>
       </a-entity>
 </a-entity>
 
@@ -124,23 +124,23 @@
       <a-text value="Q: Following results in a SyntaxError(Multiple answers possible) ?" color="#323754" scale="1.7 1.7 1.7" class="option"></a-text>
     </a-entity>
       <a-entity id="option_1" iscorrect="false" question_index="3" class="option">
-        <a-box id="" color="#323754" depth="0.3" height="0.46" width="5.5" position="0 0.2 -3" class="option"></a-box>
-        <a-text value='"That’s okay"' color="#fff" scale="1 1 1" rotation="" visible="" text="" position="-1.2 0.2 -1.9" class="option"></a-text>
+        <a-box id="" color="#323754" depth="0.3" height="0.46" width="5.5" position="0 0.2 -2.5" class="option"></a-box>
+        <a-text value='"That’s okay"' color="#fff" scale="1 1 1" rotation="" visible="" text="" position="-1.2 0.2 -1.7" class="option"></a-text>
       </a-entity>
 
       <a-entity id="option_2" iscorrect="false" question_index="3" class="option">
-        <a-box id="" color="#323754" depth="0.5" height="0.46" width="5.5"  position="0 -0.6 -3" class="option"></a-box>
-        <a-text value="’3\t’" color="#fff" scale="1 1 1"  position="-1.2 -0.5 -1.9" class="option"></a-text>
+        <a-box id="" color="#323754" depth="0.5" height="0.46" width="5.5"  position="0 -0.6 -2.5" class="option"></a-box>
+        <a-text value="’3\t’" color="#fff" scale="1 1 1"  position="-1.2 -0.5 -1.7" class="option"></a-text>
       </a-entity>
 
       <a-entity id="option_3" iscorrect="true" question_index="3" class="option">
-        <a-box id="" color="#323754" depth="0.5" height="0.46" width="5.5" position="0 -1.6 -3" class="option"></a-box>
-        <a-text value='“He said, “Yes!”"' color="#fff" scale="1 1 1" position="-1.2 -1.3 -1.9" class="option"></a-text>
+        <a-box id="" color="#323754" depth="0.5" height="0.46" width="5.5" position="0 -1.6 -2.5" class="option"></a-box>
+        <a-text value='“He said, “Yes!”"' color="#fff" scale="1 1 1" position="-1.2 -1.3 -1.7" class="option"></a-text>
       </a-entity>
 
       <a-entity id="option_4" iscorrect="false" question_index="3" class="option">
-        <a-box id="" color="#323754" depth="0.3" height="0.46" width="5.5" position="0 -2.8 -3" class="option"></a-box>
-        <a-text value='"Once upon a time…\n, she said."' color="#fff" scale="1 1 1" position="-1.2 -2.3 -1.9" class="option"></a-text>
+        <a-box id="" color="#323754" depth="0.3" height="0.46" width="5.5" position="0 -2.8 -2.5" class="option"></a-box>
+        <a-text value='"Once upon a time…\n, she said."' color="#fff" scale="1 1 1" position="-1.2 -2.3 -1.7" class="option"></a-text>
       </a-entity>
 </a-entity>
 
@@ -172,6 +172,10 @@
 
 <a-entity id="winner" visible="false" position="0 1.5 -3">
   <a-text value="You Won!!!" color="#008" scale="2 2 2"></a-text>
+  <!-- Blue point light, 5 meters in the air. -->
+
+  <!-- Dim ambient lighting. -->
+  
 </a-entity>
 
 
@@ -216,7 +220,7 @@ $(document).ready(function() {
         lifes_counter = lifes_counter -1;
         document.querySelector('#question'+question_index).setAttribute('visible', 'false');
         document.querySelector('#question'+ next_q).setAttribute('visible', 'true');
-      } else if ( !iscorrect && lifes_counter == 0 && parseInt(question_index) < max_questions) {
+      } else if ( !iscorrect && lifes_counter == 0) {
         death = true;
         document.querySelector('#question'+question_index).setAttribute('visible', 'false');
         document.querySelector('#gameover').setAttribute('visible', 'true');
