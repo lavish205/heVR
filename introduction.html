@@ -8,7 +8,7 @@
 	<a-scene>
 
     <a-assets>
-        <img id="ground" src="ground.jpg">
+        <!-- <img id="ground" src="ground.jpg"> -->
         <img src="he-logo.png" id="he-logo", crossorigin="anonymous">
     </a-assets>
 
@@ -35,8 +35,6 @@
 	        <a-box class="start_quiz" color="#323754" depth="0.5" height="0.46" width="2.5" scale="1 0.8 0.3" position="0.8 1.5 -3"></a-box>
 	        <a-text class="start_quiz" value='Start Quiz' color="#fff" position="0.1 1.5 -2.9" scale="1.5 1.5 1.5" rotation="" visible="" text=""></a-text>
 	    </a-entity>
-	    <a-animation attribute="material.opacity" begin="fade" to="0"></a-animation>
-	    <!-- <a-animation attribute="position" to="0 2.2 -5" direction="alternate" dur="2000" repeat="indefinite"></a-animation> -->
     </a-entity>
     <!-- Basic plane. -->
       <!-- <a-plane color="#CCC" height="20" width="20"></a-plane> -->
@@ -54,103 +52,103 @@
   	<a-entity visible="true" position="-3 1.5 -3" >
       <a-text value="Q: All mangoes are golden in colour. No golden-coloured things are cheap. Conclusions: I. All mangoes are cheap. II. Golden-coloured mangoes are not cheap." color="#323754" scale="1.7 1.7 1.7"></a-text>
     </a-entity>
-      <a-entity id="option_1" iscorrect="true">
-        <a-box id="" color="#323754" depth="0.3" height="0.46" width="5.5" position="0 0.2 -3"></a-box>
-        <a-text value='Only conclusion II follows' color="#fff" scale="1 1 1" rotation="" visible="" text="" position="-1.2 0.2 -1.9"></a-text>
+      <a-entity id="option_1" iscorrect="true" class="option" question_index=1>
+        <a-box id="" color="#323754" depth="0.3" height="0.46" width="5.5" position="0 0.2 -3" class="option"></a-box>
+        <a-text value='Only conclusion II follows' color="#fff" scale="1 1 1" rotation="" visible="" text="" position="-1.2 0.2 -1.9" class="option"></a-text>
       </a-entity>
 
-      <a-entity id="option_2" iscorrect="false">
-        <a-box id="" color="#323754" depth="0.5" height="0.46" width="5.5"  position="0 -0.6 -3"></a-box>
-        <a-text value='Either I or II follows' color="#fff" scale="1 1 1"  position="-1.2 -0.5 -1.9"></a-text>
+      <a-entity id="option_2" iscorrect="false" class="option" question_index=1>
+        <a-box id="" color="#323754" depth="0.5" height="0.46" width="5.5"  position="0 -0.6 -3" class="option"></a-box>
+        <a-text value='Either I or II follows' color="#fff" scale="1 1 1"  position="-1.2 -0.5 -1.9" class="option"></a-text>
       </a-entity>
 
-      <a-entity id="option_3" iscorrect="false">
-        <a-box id="" color="#323754" depth="0.5" height="0.46" width="5.5" position="0 -1.6 -3"></a-box>
-        <a-text value='Neither I nor II follows' color="#fff" scale="1 1 1" position="-1.2 -1.3 -1.9"></a-text>
+      <a-entity id="option_3" iscorrect="false" class="option" question_index=1>
+        <a-box id="" color="#323754" depth="0.5" height="0.46" width="5.5" position="0 -1.6 -3" class="option"></a-box>
+        <a-text value='Neither I nor II follows' color="#fff" scale="1 1 1" position="-1.2 -1.3 -1.9" class="option"></a-text>
       </a-entity>
 
-      <a-entity id="option_4" iscorrect="false">
-        <a-box id="" color="#323754" depth="0.3" height="0.46" width="5.5" position="0 -2.8 -3"></a-box>
-        <a-text value='Both I and II follow' color="#fff" scale="1 1 1" position="-1.2 -2.3 -1.9"></a-text>
+      <a-entity id="option_4" iscorrect="false" class="option" question_index=1>
+        <a-box id="" color="#323754" depth="0.3" height="0.46" width="5.5" position="0 -2.8 -3" class="option"></a-box>
+        <a-text value='Both I and II follow' color="#fff" scale="1 1 1" position="-1.2 -2.3 -1.9" class="option"></a-text>
       </a-entity>
 </a-entity>
 
 <!--  question 2 -->
 <a-entity id="question2" position="0 1.5 -3" visible="false">
   	<a-entity visible="true" position="-3 1.5 -3" >
-      <a-text value="Q: All mangoes are golden in colour. No golden-coloured things are cheap. Conclusions: I. All mangoes are cheap. II. Golden-coloured mangoes are not cheap." color="#323754" scale="1.7 1.7 1.7"></a-text>
+      <a-text value="Q: After being dropped a certain ball always bounces back to 2/5 of the height of its previous bounce. After the first bounce it reaches a height of 125 inches. How high (in inches) will it reach after its fourth bounce?" color="#323754" scale="1.7 1.7 1.7"></a-text>
     </a-entity>
-      <a-entity id="option_1" iscorrect="true">
-        <a-box id="" color="#323754" depth="0.3" height="0.46" width="5.5" position="0 0.2 -3"></a-box>
-        <a-text value='Only conclusion II follows' color="#fff" scale="1 1 1" rotation="" visible="" text="" position="-1.2 0.2 -1.9"></a-text>
+      <a-entity id="option_1" iscorrect="true" question_index=2>
+        <a-box id="" color="#323754" depth="0.3" height="0.46" width="5.5" position="0 0.2 -3" class="option"></a-box>
+        <a-text value='20' color="#fff" scale="1 1 1" rotation="" visible="" text="" position="-1.2 0.2 -1.9" class="option"></a-text>
       </a-entity>
 
-      <a-entity id="option_2" iscorrect="false">
-        <a-box id="" color="#323754" depth="0.5" height="0.46" width="5.5"  position="0 -0.6 -3"></a-box>
-        <a-text value='Either I or II follows' color="#fff" scale="1 1 1"  position="-1.2 -0.5 -1.9"></a-text>
+      <a-entity id="option_2" iscorrect="false" question_index=2>
+        <a-box id="" color="#323754" depth="0.5" height="0.46" width="5.5"  position="0 -0.6 -3" class="option"></a-box>
+        <a-text value='15' color="#fff" scale="1 1 1"  position="-1.2 -0.5 -1.9" class="option"></a-text>
       </a-entity>
 
-      <a-entity id="option_3" iscorrect="false">
-        <a-box id="" color="#323754" depth="0.5" height="0.46" width="5.5" position="0 -1.6 -3"></a-box>
-        <a-text value='Neither I nor II follows' color="#fff" scale="1 1 1" position="-1.2 -1.3 -1.9"></a-text>
+      <a-entity id="option_3" iscorrect="false" question_index=2>
+        <a-box id="" color="#323754" depth="0.5" height="0.46" width="5.5" position="0 -1.6 -3" class="option"></a-box>
+        <a-text value='8' color="#fff" scale="1 1 1" position="-1.2 -1.3 -1.9" class="option"></a-text>
       </a-entity>
 
-      <a-entity id="option_4" iscorrect="false">
-        <a-box id="" color="#323754" depth="0.3" height="0.46" width="5.5" position="0 -2.8 -3"></a-box>
-        <a-text value='Both I and II follow' color="#fff" scale="1 1 1" position="-1.2 -2.3 -1.9"></a-text>
+      <a-entity id="option_4" iscorrect="false" question_index=2>
+        <a-box id="" color="#323754" depth="0.3" height="0.46" width="5.5" position="0 -2.8 -3" class="option"></a-box>
+        <a-text value='5' color="#fff" scale="1 1 1" position="-1.2 -2.3 -1.9" class="option"></a-text>
       </a-entity>
 </a-entity>
 
 <!--  question 3 -->
 <a-entity id="question3" position="0 1.5 -3" visible="false">
   	<a-entity visible="true" position="-3 1.5 -3" >
-      <a-text value="Q: All mangoes are golden in colour. No golden-coloured things are cheap. Conclusions: I. All mangoes are cheap. II. Golden-coloured mangoes are not cheap." color="#323754" scale="1.7 1.7 1.7"></a-text>
+      <a-text value="Q: Following results in a SyntaxError(Multiple answers possible) ?" color="#323754" scale="1.7 1.7 1.7" class="option"></a-text>
     </a-entity>
-      <a-entity id="option_1" iscorrect="true">
-        <a-box id="" color="#323754" depth="0.3" height="0.46" width="5.5" position="0 0.2 -3"></a-box>
-        <a-text value='Only conclusion II follows' color="#fff" scale="1 1 1" rotation="" visible="" text="" position="-1.2 0.2 -1.9"></a-text>
+      <a-entity id="option_1" iscorrect="false" question_index=3>
+        <a-box id="" color="#323754" depth="0.3" height="0.46" width="5.5" position="0 0.2 -3" class="option"></a-box>
+        <a-text value='"That’s okay"' color="#fff" scale="1 1 1" rotation="" visible="" text="" position="-1.2 0.2 -1.9" class="option"></a-text>
       </a-entity>
 
-      <a-entity id="option_2" iscorrect="false">
-        <a-box id="" color="#323754" depth="0.5" height="0.46" width="5.5"  position="0 -0.6 -3"></a-box>
-        <a-text value='Either I or II follows' color="#fff" scale="1 1 1"  position="-1.2 -0.5 -1.9"></a-text>
+      <a-entity id="option_2" iscorrect="false" question_index=3>
+        <a-box id="" color="#323754" depth="0.5" height="0.46" width="5.5"  position="0 -0.6 -3" class="option"></a-box>
+        <a-text value="’3\t’" color="#fff" scale="1 1 1"  position="-1.2 -0.5 -1.9" class="option"></a-text>
       </a-entity>
 
-      <a-entity id="option_3" iscorrect="false">
-        <a-box id="" color="#323754" depth="0.5" height="0.46" width="5.5" position="0 -1.6 -3"></a-box>
-        <a-text value='Neither I nor II follows' color="#fff" scale="1 1 1" position="-1.2 -1.3 -1.9"></a-text>
+      <a-entity id="option_3" iscorrect="true" question_index=3>
+        <a-box id="" color="#323754" depth="0.5" height="0.46" width="5.5" position="0 -1.6 -3" class="option"></a-box>
+        <a-text value='“He said, “Yes!”"' color="#fff" scale="1 1 1" position="-1.2 -1.3 -1.9" class="option"></a-text>
       </a-entity>
 
-      <a-entity id="option_4" iscorrect="false">
-        <a-box id="" color="#323754" depth="0.3" height="0.46" width="5.5" position="0 -2.8 -3"></a-box>
-        <a-text value='Both I and II follow' color="#fff" scale="1 1 1" position="-1.2 -2.3 -1.9"></a-text>
+      <a-entity id="option_4" iscorrect="false" question_index=3>
+        <a-box id="" color="#323754" depth="0.3" height="0.46" width="5.5" position="0 -2.8 -3" class="option"></a-box>
+        <a-text value='"Once upon a time…\n, she said."' color="#fff" scale="1 1 1" position="-1.2 -2.3 -1.9" class="option"></a-text>
       </a-entity>
 </a-entity>
 
 <!--  question 4 -->
 <a-entity id="question4" position="0 1.5 -3" visible="false">
   	<a-entity visible="true" position="-3 1.5 -3" >
-      <a-text value="Q: All mangoes are golden in colour. No golden-coloured things are cheap. Conclusions: I. All mangoes are cheap. II. Golden-coloured mangoes are not cheap." color="#323754" scale="1.7 1.7 1.7"></a-text>
+      <a-text value="Q: Blueberries cost more than strawberries. Blueberries cost less than raspberries. Raspberries cost more than strawberries and blueberries. If the first two statements are true, the third statement is" color="#323754" scale="1.7 1.7 1.7"></a-text>
     </a-entity>
-      <a-entity id="option_1" iscorrect="true">
-        <a-box id="" color="#323754" depth="0.3" height="0.46" width="5.5" position="0 0.2 -3"></a-box>
-        <a-text value='Only conclusion II follows' color="#fff" scale="1 1 1" rotation="" visible="" text="" position="-1.2 0.2 -1.9"></a-text>
+      <a-entity id="option_1" iscorrect="true" question_index=4>
+        <a-box id="" color="#323754" depth="0.3" height="0.46" width="5.5" position="0 0.2 -3" class="option"></a-box>
+        <a-text value='true' color="#fff" scale="1 1 1" rotation="" visible="" text="" position="-1.2 0.2 -1.9" class="option"></a-text>
       </a-entity>
 
-      <a-entity id="option_2" iscorrect="false">
-        <a-box id="" color="#323754" depth="0.5" height="0.46" width="5.5"  position="0 -0.6 -3"></a-box>
-        <a-text value='Either I or II follows' color="#fff" scale="1 1 1"  position="-1.2 -0.5 -1.9"></a-text>
+      <a-entity id="option_2" iscorrect="false" question_index=4>
+        <a-box id="" color="#323754" depth="0.5" height="0.46" width="5.5"  position="0 -0.6 -3" class="option"></a-box>
+        <a-text value='false' color="#fff" scale="1 1 1"  position="-1.2 -0.5 -1.9" class="option"></a-text>
       </a-entity>
 
-      <a-entity id="option_3" iscorrect="false">
-        <a-box id="" color="#323754" depth="0.5" height="0.46" width="5.5" position="0 -1.6 -3"></a-box>
-        <a-text value='Neither I nor II follows' color="#fff" scale="1 1 1" position="-1.2 -1.3 -1.9"></a-text>
+      <a-entity id="option_3" iscorrect="false" question_index=4>
+        <a-box id="" color="#323754" depth="0.5" height="0.46" width="5.5" position="0 -1.6 -3" class="option"></a-box>
+        <a-text value='Uncertain' color="#fff" scale="1 1 1" position="-1.2 -1.3 -1.9" class="option"></a-text>
       </a-entity>
 
-      <a-entity id="option_4" iscorrect="false">
-        <a-box id="" color="#323754" depth="0.3" height="0.46" width="5.5" position="0 -2.8 -3"></a-box>
-        <a-text value='Both I and II follow' color="#fff" scale="1 1 1" position="-1.2 -2.3 -1.9"></a-text>
-      </a-entity>
+</a-entity>
+
+<a-entity id="gameover" visible="false">
+<a-text value="GAME OVER" color="#f10" scale="2 2 2"></a-text>
 </a-entity>
 </a-scene>
   <body>
@@ -161,4 +159,29 @@
 		document.querySelector('#question1').setAttribute('visible', 'true');
       // remove the div
     });
+
+  var lifes_counter = 1;
+  var death = false;
+  var points_counter = 0;
+
+  document.querySelector('.option').addEventListener('click', function(e) {
+   var iscorrect = e.target.parentNode.getDOMAttribute('iscorrect');
+   var question_index = e.target.parentNode.getDOMAttribute('question_index');
+   if (iscorrect && lifes_counter > 0) {
+    document.querySelector('#question'+question_index).setAttribute('visible', 'false');
+    question_index++;
+    document.querySelector('#question'+question_index).setAttribute('visible', 'true');
+    points_counter++;
+    console.log(points_counter);
+   } else if(!iscorrect && lifes_counter > 0) {
+    lifes_counter--;
+    document.querySelector('#question'+question_index).setAttribute('visible', 'false');
+    question_index++;
+    document.querySelector('#question'+question_index).setAttribute('visible', 'true');
+   } else if (lifes_counter == 0) {
+    death = true;
+    document.querySelector('#question'+question_index).setAttribute('visible', 'false');
+    document.querySelector('#gameover').setAttribute('visible', 'true');
+   }
+  });
   </script>
