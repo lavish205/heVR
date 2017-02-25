@@ -2,7 +2,26 @@
   <head>
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
     <script src="https://rawgit.com/bryik/aframe-bmfont-text-component/master/dist/aframe-bmfont-text-component.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+    <!-- <script src="ground.js"></script> -->
+    <!-- <script src="LetterPanel.js"></script> -->
 
+    <style type="text/css">
+      #points {
+        position: absolute;
+    bottom: 58px;
+    background: white;
+    width: 200px;
+    height: 72px;
+    left: 10px;
+    color: #5d83b2;
+    display: none;
+    font-size: 14px;
+      }
+    </style>
   </head>
   <body>
 	<a-scene>
@@ -46,111 +65,127 @@
 
     <!-- <a-torus-knot color="#B84A39" arc="180" p="2" q="7" radius="5" radius-tubular="0.1"></a-torus-knot> -->
 
-
+<a-entity class="questions">
 <!--  question 1 -->
-<a-entity id="question1" position="0 1.5 -3" visible="false">
+<a-entity id="question1" position="0 1.5 -1.9" visible="false" class="question">
   	<a-entity visible="true" position="-3 1.5 -3" >
       <a-text value="Q: All mangoes are golden in colour. No golden-coloured things are cheap. Conclusions: I. All mangoes are cheap. II. Golden-coloured mangoes are not cheap." color="#323754" scale="1.7 1.7 1.7"></a-text>
     </a-entity>
-      <a-entity id="option_1" iscorrect="true" class="option" question_index=1>
+      <a-entity id="option_1" iscorrect="true" class="option" question_index="1">
         <a-box id="" color="#323754" depth="0.3" height="0.46" width="5.5" position="0 0.2 -3" class="option"></a-box>
         <a-text value='Only conclusion II follows' color="#fff" scale="1 1 1" rotation="" visible="" text="" position="-1.2 0.2 -1.9" class="option"></a-text>
       </a-entity>
 
-      <a-entity id="option_2" iscorrect="false" class="option" question_index=1>
+      <a-entity id="option_2" iscorrect="false" class="option" question_index="1">
         <a-box id="" color="#323754" depth="0.5" height="0.46" width="5.5"  position="0 -0.6 -3" class="option"></a-box>
         <a-text value='Either I or II follows' color="#fff" scale="1 1 1"  position="-1.2 -0.5 -1.9" class="option"></a-text>
       </a-entity>
 
-      <a-entity id="option_3" iscorrect="false" class="option" question_index=1>
+      <a-entity id="option_3" iscorrect="false" class="option" question_index="1">
         <a-box id="" color="#323754" depth="0.5" height="0.46" width="5.5" position="0 -1.6 -3" class="option"></a-box>
         <a-text value='Neither I nor II follows' color="#fff" scale="1 1 1" position="-1.2 -1.3 -1.9" class="option"></a-text>
       </a-entity>
 
-      <a-entity id="option_4" iscorrect="false" class="option" question_index=1>
+      <a-entity id="option_4" iscorrect="false" class="option" question_index="1">
         <a-box id="" color="#323754" depth="0.3" height="0.46" width="5.5" position="0 -2.8 -3" class="option"></a-box>
         <a-text value='Both I and II follow' color="#fff" scale="1 1 1" position="-1.2 -2.3 -1.9" class="option"></a-text>
       </a-entity>
 </a-entity>
 
 <!--  question 2 -->
-<a-entity id="question2" position="0 1.5 -3" visible="false">
-  	<a-entity visible="true" position="-3 1.5 -3" >
+<a-entity id="question2" position="0 1.5 -2.9" visible="false" class="question">
+    <a-entity visible="true" position="-3 1.5 -3" >
       <a-text value="Q: After being dropped a certain ball always bounces back to 2/5 of the height of its previous bounce. After the first bounce it reaches a height of 125 inches. How high (in inches) will it reach after its fourth bounce?" color="#323754" scale="1.7 1.7 1.7"></a-text>
     </a-entity>
-      <a-entity id="option_1" iscorrect="true" question_index=2>
-        <a-box id="" color="#323754" depth="0.3" height="0.46" width="5.5" position="0 0.2 -3" class="option"></a-box>
-        <a-text value='20' color="#fff" scale="1 1 1" rotation="" visible="" text="" position="-1.2 0.2 -1.9" class="option"></a-text>
+      <a-entity id="option_1" iscorrect="true" question_index="2" class="option">
+        <a-box id="" color="#323754" depth="0.3" height="0.46" width="5.5" position="0 0.2 -3" class="option" question_index="2"></a-box>
+        <a-text value='20' color="#fff" scale="1 1 1" rotation="" visible="" text="" position="-1.2 0.2 -2.5" class="option" question_index="2"></a-text>
       </a-entity>
 
-      <a-entity id="option_2" iscorrect="false" question_index=2>
+      <a-entity id="option_2" iscorrect="false" question_index="2" class="option">
         <a-box id="" color="#323754" depth="0.5" height="0.46" width="5.5"  position="0 -0.6 -3" class="option"></a-box>
         <a-text value='15' color="#fff" scale="1 1 1"  position="-1.2 -0.5 -1.9" class="option"></a-text>
       </a-entity>
 
-      <a-entity id="option_3" iscorrect="false" question_index=2>
+      <a-entity id="option_3" iscorrect="false" question_index="2" class="option">
         <a-box id="" color="#323754" depth="0.5" height="0.46" width="5.5" position="0 -1.6 -3" class="option"></a-box>
         <a-text value='8' color="#fff" scale="1 1 1" position="-1.2 -1.3 -1.9" class="option"></a-text>
       </a-entity>
 
-      <a-entity id="option_4" iscorrect="false" question_index=2>
+      <a-entity id="option_4" iscorrect="false" question_index="2" class="option">
         <a-box id="" color="#323754" depth="0.3" height="0.46" width="5.5" position="0 -2.8 -3" class="option"></a-box>
         <a-text value='5' color="#fff" scale="1 1 1" position="-1.2 -2.3 -1.9" class="option"></a-text>
       </a-entity>
 </a-entity>
 
 <!--  question 3 -->
-<a-entity id="question3" position="0 1.5 -3" visible="false">
+<a-entity id="question3" position="0 1.5 -3" visible="false" class="question">
   	<a-entity visible="true" position="-3 1.5 -3" >
       <a-text value="Q: Following results in a SyntaxError(Multiple answers possible) ?" color="#323754" scale="1.7 1.7 1.7" class="option"></a-text>
     </a-entity>
-      <a-entity id="option_1" iscorrect="false" question_index=3>
+      <a-entity id="option_1" iscorrect="false" question_index="3" class="option">
         <a-box id="" color="#323754" depth="0.3" height="0.46" width="5.5" position="0 0.2 -3" class="option"></a-box>
         <a-text value='"That’s okay"' color="#fff" scale="1 1 1" rotation="" visible="" text="" position="-1.2 0.2 -1.9" class="option"></a-text>
       </a-entity>
 
-      <a-entity id="option_2" iscorrect="false" question_index=3>
+      <a-entity id="option_2" iscorrect="false" question_index="3" class="option">
         <a-box id="" color="#323754" depth="0.5" height="0.46" width="5.5"  position="0 -0.6 -3" class="option"></a-box>
         <a-text value="’3\t’" color="#fff" scale="1 1 1"  position="-1.2 -0.5 -1.9" class="option"></a-text>
       </a-entity>
 
-      <a-entity id="option_3" iscorrect="true" question_index=3>
+      <a-entity id="option_3" iscorrect="true" question_index="3" class="option">
         <a-box id="" color="#323754" depth="0.5" height="0.46" width="5.5" position="0 -1.6 -3" class="option"></a-box>
         <a-text value='“He said, “Yes!”"' color="#fff" scale="1 1 1" position="-1.2 -1.3 -1.9" class="option"></a-text>
       </a-entity>
 
-      <a-entity id="option_4" iscorrect="false" question_index=3>
+      <a-entity id="option_4" iscorrect="false" question_index="3" class="option">
         <a-box id="" color="#323754" depth="0.3" height="0.46" width="5.5" position="0 -2.8 -3" class="option"></a-box>
         <a-text value='"Once upon a time…\n, she said."' color="#fff" scale="1 1 1" position="-1.2 -2.3 -1.9" class="option"></a-text>
       </a-entity>
 </a-entity>
 
 <!--  question 4 -->
-<a-entity id="question4" position="0 1.5 -3" visible="false">
+<!-- <a-entity id="question4" position="0 1.5 -3" visible="false" class="question">
   	<a-entity visible="true" position="-3 1.5 -3" >
       <a-text value="Q: Blueberries cost more than strawberries. Blueberries cost less than raspberries. Raspberries cost more than strawberries and blueberries. If the first two statements are true, the third statement is" color="#323754" scale="1.7 1.7 1.7"></a-text>
     </a-entity>
-      <a-entity id="option_1" iscorrect="true" question_index=4>
+      <a-entity id="option_1" iscorrect="true" question_index="4">
         <a-box id="" color="#323754" depth="0.3" height="0.46" width="5.5" position="0 0.2 -3" class="option"></a-box>
         <a-text value='true' color="#fff" scale="1 1 1" rotation="" visible="" text="" position="-1.2 0.2 -1.9" class="option"></a-text>
       </a-entity>
 
-      <a-entity id="option_2" iscorrect="false" question_index=4>
+      <a-entity id="option_2" iscorrect="false" question_index="4">
         <a-box id="" color="#323754" depth="0.5" height="0.46" width="5.5"  position="0 -0.6 -3" class="option"></a-box>
         <a-text value='false' color="#fff" scale="1 1 1"  position="-1.2 -0.5 -1.9" class="option"></a-text>
       </a-entity>
 
-      <a-entity id="option_3" iscorrect="false" question_index=4>
+      <a-entity id="option_3" iscorrect="false" question_index="4">
         <a-box id="" color="#323754" depth="0.5" height="0.46" width="5.5" position="0 -1.6 -3" class="option"></a-box>
         <a-text value='Uncertain' color="#fff" scale="1 1 1" position="-1.2 -1.3 -1.9" class="option"></a-text>
       </a-entity>
-
+ -->
+<!-- </a-entity> -->
+</a-entity>
+<a-entity id="gameover" visible="false" position="0 1.5 -3">
+  <a-text value="GAME OVER" color="#f10" scale="2 2 2"></a-text>
 </a-entity>
 
-<a-entity id="gameover" visible="false">
-<a-text value="GAME OVER" color="#f10" scale="2 2 2"></a-text>
+<a-entity id="winner" visible="false" position="0 1.5 -3">
+  <a-text value="You Won!!!" color="#008" scale="2 2 2"></a-text>
 </a-entity>
+
+
+<a-entity id="points-counter"
+        position="1.5 3.38 -4"
+        rotation="-14.54 -25 0"
+        points-counter="value: 000"
+        gamestate-bind="points: points-counter.value">
+</a-entity>
+
+<a-entity ground></a-entity>
 </a-scene>
+
+<div id="points"></div>
   <body>
 </html>
   <script type="text/javascript">
@@ -160,28 +195,39 @@
       // remove the div
     });
 
-  var lifes_counter = 1;
-  var death = false;
-  var points_counter = 0;
+  lifes_counter = 1;
+  death = false;
+  points_counter = 0;
+  max_questions = 3
 
-  document.querySelector('.option').addEventListener('click', function(e) {
-   var iscorrect = e.target.parentNode.getDOMAttribute('iscorrect');
-   var question_index = e.target.parentNode.getDOMAttribute('question_index');
-   if (iscorrect && lifes_counter > 0) {
-    document.querySelector('#question'+question_index).setAttribute('visible', 'false');
-    question_index++;
-    document.querySelector('#question'+question_index).setAttribute('visible', 'true');
-    points_counter++;
-    console.log(points_counter);
-   } else if(!iscorrect && lifes_counter > 0) {
-    lifes_counter--;
-    document.querySelector('#question'+question_index).setAttribute('visible', 'false');
-    question_index++;
-    document.querySelector('#question'+question_index).setAttribute('visible', 'true');
-   } else if (lifes_counter == 0) {
-    death = true;
-    document.querySelector('#question'+question_index).setAttribute('visible', 'false');
-    document.querySelector('#gameover').setAttribute('visible', 'true');
-   }
+$(document).ready(function() {
+  $('.question .option').on('click', function(e){
+    console.log(e)
+    console.log('here....')
+    var iscorrect = e.target.parentNode.getDOMAttribute('iscorrect');
+      var question_index = e.target.parentNode.getDOMAttribute('question_index') || e.target.getDOMAttribute('question_index');
+        var next_q = (parseInt(question_index)+1).toString();
+      console.log(question_index, 'question_index', $('#question'+next_q))
+      if (iscorrect && lifes_counter > 0 && parseInt(question_index) < max_questions) {
+        document.querySelector('#question'+question_index).setAttribute('visible', 'false');
+        document.querySelector('#question'+next_q).setAttribute('visible', 'true');
+        points_counter++;
+      } else if(!iscorrect && lifes_counter > 0 && parseInt(question_index) < max_questions) {
+        lifes_counter = lifes_counter -1;
+        document.querySelector('#question'+question_index).setAttribute('visible', 'false');
+        document.querySelector('#question'+ next_q).setAttribute('visible', 'true');
+      } else if ( !iscorrect && lifes_counter == 0 && parseInt(question_index) < max_questions) {
+        death = true;
+        document.querySelector('#question'+question_index).setAttribute('visible', 'false');
+        document.querySelector('#gameover').setAttribute('visible', 'true');
+        document.querySelector('#points').innerHTML = 'points:' + points_counter; 
+        document.querySelector('#points').style.display = 'block';
+      } else {
+        document.querySelector('#question'+question_index).setAttribute('visible', 'false');
+        document.querySelector('#winner').setAttribute('visible', 'true');
+      }
+
   });
+});
+
   </script>
